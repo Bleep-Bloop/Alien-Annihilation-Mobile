@@ -9,6 +9,7 @@ public abstract class Character : MonoBehaviour
     protected Animator animator;
     protected Sprite sprite;
     protected BoxCollider2D bc2D;
+    protected Rigidbody2D rb2D;
 
     [Header("Properties")]
     [SerializeField] protected float maxHealth;
@@ -20,6 +21,7 @@ public abstract class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         sprite = GetComponent<Sprite>();
         bc2D = GetComponent<BoxCollider2D>();
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
