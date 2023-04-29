@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Character : MonoBehaviour
+public abstract class CharacterBase : MonoBehaviour
 {
 
     [Header("Components")]
     protected Animator animator;
     protected Sprite sprite;
     protected BoxCollider2D bc2D;
-    protected Rigidbody2D rb2D;
+    protected Rigidbody2D rb2D; // I don't know if I need this here exactly.
 
     [Header("Properties")]
     [SerializeField] protected float maxHealth;
